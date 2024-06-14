@@ -1,25 +1,46 @@
 function updateTime() {
-  //Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
-
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+  //Brussels
+  let brusselsElement = document.querySelector("#brussels");
+  if (brusselsElement) {
+    let brusselsDateElement = brusselsElement.querySelector(".date");
+    let brusselsTimeElement = brusselsElement.querySelector(".time");
+    let brusselsTime = moment().tz("Europe/Brussels");
+    brusselsDateElement.innerHTML = brusselsTime.format("MMMM Do YYYY");
+    brusselsTimeElement.innerHTML = brusselsTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  //Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  //Manila
+  let manilaElement = document.querySelector("#manila");
+  if (manilaElement) {
+    let manilaDateElement = manilaElement.querySelector(".date");
+    let manilaTimeElement = manilaElement.querySelector(".time");
+    let manilaTime = moment().tz("Asia/Manila");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    manilaDateElement.innerHTML = manilaTime.format("MMMM Do YYYY");
+    manilaTimeElement.innerHTML = manilaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  //Sydney
+  let sydneyElement = document.querySelector("#sydney");
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyTime = moment().tz("Australia/Sydney");
+    sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
+    sydneyTimeElement.innerHTML = sydneyTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  //New York
+  let newyorkElement = document.querySelector("#new-york");
+  if (newyorkElement) {
+    let newyorkDateElement = newyorkElement.querySelector(".date");
+    let newyorkTimeElement = newyorkElement.querySelector(".time");
+    let newyorkTime = moment().tz("America/New_York");
+    newyorkDateElement.innerHTML = newyorkTime.format("MMMM Do YYYY");
+    newyorkTimeElement.innerHTML = newyorkTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
