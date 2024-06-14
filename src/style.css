@@ -43,10 +43,18 @@ a {
 
 .city {
   display: flex;
+  flex-direction: row;
   margin: 20px 0;
   justify-content: space-between;
   padding: 20px 0;
   border-bottom: 1px dashed #1a788277;
+}
+
+@media (max-width: 600px) {
+  .city {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .city:last-child {
   border: none;
